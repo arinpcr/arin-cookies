@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Account - Arin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="Style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8f7;
+    }
+
+    .account-container {
+      max-width: 900px;
+      margin: 50px auto;
+      display: flex;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      width: 300px;
+      box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .profile-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #7a4700;
+    }
+
+    .profile-card h2 {
+      color: #7a4700;
+      margin: 15px 0 5px;
+    }
+
+    .profile-card p {
+      color: #555;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .account-info {
+      flex: 1;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+    }
+
+    .account-info h3 {
+      color: #7a4700;
+      margin-bottom: 20px;
+    }
+
+    .info-group {
+      margin-bottom: 15px;
+    }
+
+    .info-group label {
+      display: block;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .info-group span {
+      display: block;
+      color: #555;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .account-actions {
+      margin-top: 30px;
+    }
+
+    .account-actions a {
+      display: inline-block;
+      margin-right: 15px;
+      background: #7a4700;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .account-actions a:hover {
+      background: #9b5e00;
+    }
+
+    @media (max-width: 768px) {
+      .account-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .nav {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+.nav a:hover {
+  color: #7a4700;
+  transform: translateY(-3px);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.icons a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.icons a:hover {
+  color: #7a4700;
+}
+  </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo"><a href="Beranda.html">CooKies</a></div>
+        <nav class="nav">
+          <a href="Beranda.html#our-cookies">OUR COOKIES</a>
+          <a href="Beranda.html#gifts-events">GIFTS & EVENTS</a>
+          <a href="Beranda.html#our-story">OUR STORY</a>
+          <a href="Beranda.html#our-location">OUR LOCATION</a>
+          <a href="Beranda.html#faq">FAQ</a>
+        </nav>
+        <div class="icons">
+          <a href="favorite.html">❤️</a>
+          <a href="card.html">👤</a>
+          <a href="cart.html">🛒</a>
+        </div>
+      </header>
+
+  <div class="account-container">
+    <div class="profile-card">
+      <img src="Asset/profile.jpg" alt="User Photo">
+      <h2>Arin</h2>
+      <p>arin@example.com</p>
+      <p>Member since 2023</p>
+    </div>
+
+    <div class="account-info">
+      <h3>Account Information</h3>
+
+      <div class="info-group">
+        <label>Full Name</label>
+        <span>Arin</span>
+      </div>
+
+      <div class="info-group">
+        <label>Email</label>
+        <span>arin@example.com</span>
+      </div>
+
+      <div class="info-group">
+        <label>Phone Number</label>
+        <span>+62 831 4852 2363</span>
+      </div>
+
+      <div class="info-group">
+        <label>Shipping Address</label>
+        <span>Jl. Mawar No. 123, Bandung, Indonesia</span>
+      </div>
+
+      <div class="info-group">
+        <label>Recent Orders</label>
+        <span>#12345 - Oat Teddy (Completed)</span>
+      </div>
+
+      <div class="account-actions">
+        <a href="favorite.html"><i class="fa-solid fa-heart"></i> Favorites</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        <a href="Beranda.html"><i class="fa-solid fa-right-from-bracket"></i> Home</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            background-color: #fff6f1;
+        }
+
+        h1 {
+            padding-top: 30px;
+            color: #7a4700;
+        }
+
+        .cart {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+        }
+
+        .cart-item img {
+            width: 80px;
+            border-radius: 8px;
+        }
+
+        .cart-item h3 {
+            flex: 1;
+            margin-left: 20px;
+            color: #333;
+        }
+
+        .checkout {
+            text-align: right;
+            margin-top: 30px;
+        }
+
+        .checkout button {
+            padding: 10px 20px;
+            background-color: #7a4700;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex: 2;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s, transform 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #7a4700;
+            transform: translateY(-3px);
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .icons a {
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .icons a:hover {
+            color: #7a4700;
+        }
+
+        .checkout-btn a{
+            color: #fff6d2;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo"><a href="Beranda.html">CooKies</a></div>
+        <nav class="nav">
+          <a href="Beranda.html#our-cookies">OUR COOKIES</a>
+          <a href="Beranda.html#gifts-events">GIFTS & EVENTS</a>
+          <a href="Beranda.html#our-story">OUR STORY</a>
+          <a href="Beranda.html#our-location">OUR LOCATION</a>
+          <a href="Beranda.html#faq">FAQ</a>
+        </nav>
+        <div class="icons">
+          <a href="favorite.html">❤️</a>
+          <a href="card.html">👤</a>
+          <a href="cart.html">🛒</a>
+        </div>
+      </header>
+
+
+    <h1>🛒 Your Cart</h1>
+    <div class="cart">
+        <div class="cart-item">
+            <img src="cookie6.jpeg" alt="Cookie">
+            <h3>Oat Teddy Cookie</h3>
+            <p>Rp15.000</p>
+        </div>
+        <div class="cart-item">
+            <img src="cookie7.jpeg" alt="Cookie">
+            <h3>Snoopy Cheese Cookie</h3>
+            <p>Rp20.000</p>
+        </div>
+        <div class="checkout">
+            <strong>Total: Rp35.000</strong><br>
+            <button class="checkout-btn"><a href="Success.html"> to Checkout</a></button>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+  <footer class="footer">
+    <p>Follow Us: Instagram | Facebook | Twitter</p>
+    <p>Help | Contact | Privacy Policy</p>
+    <p>&copy; 2025 CooKies. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
